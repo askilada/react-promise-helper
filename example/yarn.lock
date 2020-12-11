@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@aski-utils/react-promise-helper@link:..":
+  version "0.0.0"
+  uid ""
+
 "@babel/code-frame@7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -8745,10 +8749,6 @@ react-is@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
-
-"react-promise-helper@link:..":
-  version "0.0.0"
-  uid ""
 
 "react-scripts@link:../node_modules/react-scripts":
   version "0.0.0"

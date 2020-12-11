@@ -3,8 +3,12 @@ import styles from './styles.module.css'
 
 interface Props {
   text: string
+  onClick: () => void
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const ExampleComponent = ({ text, onClick }: Props) => {
+  return <div onClick={() => onClick()} className={styles.test}>Example Component: {text}</div>
 }
+
+
+export * from './usePromiseHelper'
