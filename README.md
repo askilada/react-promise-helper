@@ -1,28 +1,33 @@
-# react-promise-helper
+# @aski-utils/react-promise-helper
 
-> Made with create-react-library
 
 [![NPM](https://img.shields.io/npm/v/react-promise-helper.svg)](https://www.npmjs.com/package/react-promise-helper) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-promise-helper
+npm install --save @aski-utils/react-promise-helper
 ```
 
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React, { FC } from 'react'
+import {usePromiseHelper} from '@aski-utils/react-promise-helper'
 
-import MyComponent from 'react-promise-helper'
-import 'react-promise-helper/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+interface ComponentProps {
 }
+
+export const DemoComponent: FC<ComponentProps> = () => {
+    const {state, start} = usePromiseHelper(() => Promise.resolve('Awesome'))
+
+    return (<div onClick={() => start()}>{state}</div>)
+}
+
+
+
+
 ```
 
 ## License
